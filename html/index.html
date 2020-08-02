@@ -26,7 +26,7 @@
                 e.preventDefault() //previnir que a navegação ocorra
                 fetch(link.href) //ajax
                     .then(resp => resp.text()) //pegar o conteúdo html
-                    .then(html => conteudo.innerHTML)
+                    .then(html => conteudo.innerHTML = html)
             }
         })
     </script>
