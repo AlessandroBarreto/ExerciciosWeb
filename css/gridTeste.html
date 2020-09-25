@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: gray;
+        margin: 0;
+        height: 100%;
+      }
+
+      .grid {
+        border: greenyellow 5px solid;
+        display: grid;
+        grid-template: 100px 100px / repeat(3, 1fr);
+      }
+
+      .flex-container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+      }
+
+      @media (max-width: 600px) {
+        .flex-container1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: rgb(3, 3, 3);
+        }
+      }
+
+      .flex-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+      }
+      .flex-container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+      }
+      .flex-container4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+      }
+      .flex-container5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hotpink;
+        grid-column: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="flex-container1">1</div>
+      <div class="flex-container2">2</div>
+      <div class="flex-container3">3</div>
+      <div class="flex-container4">4</div>
+      <div class="flex-container5">5</div>
+    </div>
+  </body>
+</html>
